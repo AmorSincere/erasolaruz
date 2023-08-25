@@ -2,8 +2,10 @@ from aiogram.utils import executor
 import handlers
 from dispatch import dp
 
+webhook_url = 'https://amorsincere.github.io/erasolaruz/'
+await bot.setWebhook(webhook_url)
 
 
 
-if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+await dp.start_polling()
+
